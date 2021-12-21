@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkNum(arr,str) {
+        let index = -1;
+        for (let i = 0; i < arr.length; i++) {
+            if (str === arr[i]) {
+                index = i;
+            }
+        }
+        return index;
+    }
+    let newArr = [];
+    let length = parseFloat(prompt('Nhập độ dài mảng'));
+    for (let i = 0; i < length; i++) {
+        newArr[i] = prompt('Nhập phần tử thứ '+ i);
+    }
+    let str = prompt('nhập ký tự cần tìm');
+    let index = checkNum(newArr, str)
+    if (index != -1) {
+        alert('Số bạn nhập có trong mảng bạn nhập' + ' nằm ở vị Trí thứ ' + index);
+    }
+    else {
+        alert('-1');
+    }
+</script>
+</body>
+</html>

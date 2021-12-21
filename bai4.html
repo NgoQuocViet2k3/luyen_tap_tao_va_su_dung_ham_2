@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập vào kí tự số "));
+
+    function isNumber(number) {
+        let isNumber = true
+        if (isNaN(number)) {
+            isNumber = false;
+        }
+        return isNumber
+    }
+    let result = isNumber(number)
+    if (result === true) {
+        alert("Kí tự nhập vào là kí tự số");
+    } else {
+        alert("Kí tự nhập vào không phải kí tự số");
+    }
+
+</script>
+</body>
+</html>

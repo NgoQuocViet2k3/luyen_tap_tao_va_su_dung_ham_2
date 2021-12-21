@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function change (arr) {
+        let first = 0;
+        let last = arr.length-1;
+        while (first < last) {
+            let b = arr[first]
+            arr[first] = arr[last];
+            arr[last] = b
+            first++
+            last--
+        }
+        return arr
+    }
+    let newArr = [];
+    let length = parseInt(prompt("Nhập độ dài mảng"));
+    for (let i = 0; i < length; i++) {
+        newArr[i] = prompt("Nhập phần tử thứ " + i);
+    }
+    alert("Mảng sau đảo ngược là " + change(newArr));
+</script>
+</body>
+</html>

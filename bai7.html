@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = parseInt(prompt("Nhập số nguyên thứ nhất"));
+    let number2 = parseInt(prompt("Nhập số nguyên thứ hai"));
+
+    function getSwap(number1, number2) {
+        let swap = number1;
+        number1 = number2;
+        number2 = swap;
+        return alert("Sau khi đổi chỗ số thứ nhất và số thứ hai là: " + number1 + " là " + number2)
+    }
+
+    getSwap(number1, number2)
+
+
+</script>
+</body>
+</html>

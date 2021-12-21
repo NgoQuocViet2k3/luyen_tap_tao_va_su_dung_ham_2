@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập một số nguyên bất kì "));
+
+    function isFactorial(number) {
+        let factorial = 1
+        for (let i = 1; i < number; i++) {
+            factorial *= i
+        }
+        alert("Giai thừa của " + number + " là " + factorial)
+    }
+
+    isFactorial(number)
+
+
+</script>
+</body>
+</html>

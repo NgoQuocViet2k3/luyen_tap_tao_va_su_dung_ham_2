@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập số nguyên a: "));
+    let b = parseInt(prompt("Nhập số nguyên b: "));
+    let c = parseInt(prompt("Nhập số nguyên c: "));
+
+    function isMin(a, b, c) {
+        if (a < b) {
+            if (a < c) {
+                alert(a + " là số nhỏ nhất ");
+            } else {
+                alert(c + " là số nhỏ nhất ");
+            }
+        }
+        else
+                if (b < c) {
+                    alert(b + " là số nhỏ nhất ");
+                } else {
+                    alert(c + " là số nhỏ nhất ")
+                }
+            }
+    isMin(a, b, c);
+
+
+</script>
+</body>
+</html>
